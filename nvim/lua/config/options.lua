@@ -11,3 +11,5 @@ vim.g.autoformat = false
 
 vim.cmd([[set colorcolumn=80]])
 
+
+vim.keymap.set('n', '<C-b>', '<Cmd>Neotree toggle<CR>')
