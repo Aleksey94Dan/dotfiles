@@ -1,0 +1,67 @@
+{
+  "def function": {
+    "prefix": "def",
+    "body": [
+      "def ${1:name}(${2:args}):",
+      "    ${0:pass}"
+    ],
+    "description": "Define a function"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:ClassName}(${2:object}):",
+      "    def __init__(self, ${3:args}):",
+      "        ${0:pass}"
+    ],
+    "description": "Define a class"
+  },
+  "if main": {
+    "prefix": "ifmain",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    ${0:main()}"
+    ],
+    "description": "Entry point guard"
+  },
+  "try except": {
+    "prefix": "try",
+    "body": [
+      "try:",
+      "    ${1:pass}",
+      "except ${2:Exception} as ${3:e}:",
+      "    ${0:pass}"
+    ],
+    "description": "Try/except block"
+  },
+  "with context": {
+    "prefix": "with",
+    "body": [
+      "with ${1:open(path)} as ${2:f}:",
+      "    ${0:pass}"
+    ],
+    "description": "With context manager"
+  },
+  "for loop": {
+    "prefix": "for",
+    "body": [
+      "for ${1:item} in ${2:iterable}:",
+      "    ${0:pass}"
+    ],
+    "description": "For loop"
+  },
+  "list comprehension": {
+    "prefix": "lc",
+    "body": [
+      "${0:[${1:x} for ${2:x} in ${3:iterable}]}"
+    ],
+    "description": "List comprehension"
+  },
+  "dict comprehension": {
+    "prefix": "dc",
+    "body": [
+      "${0:{${1:k}: ${2:v} for ${3:k}, ${4:v} in ${5:items}}}"
+    ],
+    "description": "Dict comprehension"
+  }
+}

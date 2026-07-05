@@ -9,6 +9,7 @@
   {
     "context": "Workspace",
     "bindings": {
+      "space n": "workspace::NewFile",
       "space e": "project_panel::ToggleFocus",
       "space o": "outline_panel::Toggle",
       // "shift shift": "file_finder::Toggle"
@@ -17,6 +18,7 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
+      "space n": "workspace::NewFile",
       "space e": "project_panel::ToggleFocus",
       "space o": "outline_panel::Toggle",
     },
@@ -24,6 +26,7 @@
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
+      "space n": "workspace::NewFile",
       "space e": "project_panel::ToggleFocus",
       "space o": "outline_panel::Toggle",
     },
