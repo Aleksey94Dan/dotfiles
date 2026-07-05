@@ -1,0 +1,320 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "edit_predictions": {
+    "provider": "zed",
+  },
+  "languages": {
+    "Rust": {
+      "inlay_hints": {
+        "enabled": true,
+      },
+      "hard_tabs": true,
+      "language_servers": ["rust-analyzer", "..."],
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "tasks": {
+        "prefer_lsp": true,
+        "enabled": true,
+      },
+      "remove_trailing_whitespace_on_save": true,
+    },
+    "Regex": {
+      "indent_guides": {
+        "enabled": true,
+      },
+    },
+    "Python": {
+      "language_servers": ["basedpyright", "ruff", "..."],
+      "formatter": {
+        "language_server": {
+          "name": "ruff",
+        },
+      },
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+      },
+      "tab_size": 4,
+      "tasks": {
+        "prefer_lsp": true,
+        "enabled": true,
+      },
+      "indent_guides": { "enabled": true },
+      "auto_indent_on_paste": true,
+      "remove_trailing_whitespace_on_save": true,
+    },
+    "Markdown": {
+      "remove_trailing_whitespace_on_save": true,
+      "tasks": {
+        "prefer_lsp": true,
+        "enabled": true,
+      },
+      "indent_guides": {
+        "enabled": true,
+      },
+      "hard_tabs": true,
+      "auto_indent_on_paste": true,
+    },
+    "YAML": {
+      "language_servers": ["yaml-language-server", "..."],
+      "formatter": "language_server",
+      "tasks": {
+        "prefer_lsp": true,
+      },
+      "use_on_type_format": true,
+      "remove_trailing_whitespace_on_save": true,
+      "indent_guides": {
+        "enabled": true,
+      },
+    },
+    "Go": {
+      "language_servers": ["gopls", "..."],
+      "tab_size": 4,
+      "format_on_save": "on",
+    },
+    "JSON": {
+      "language_servers": ["json-language-server", "..."],
+    },
+    "HTML": {
+      "language_servers": ["vscode-html-language-server", "..."],
+    },
+    "CSS": {
+      "language_servers": ["vscode-css-language-server", "..."],
+    },
+  },
+  "relative_line_numbers": "enabled",
+  "cursor_blink": false,
+  "rounded_selection": false,
+  "selection_highlight": false,
+  "message_editor": {
+    "auto_replace_emoji_shortcode": false,
+  },
+  "extend_comment_on_newline": false,
+  "middle_click_paste": false,
+  "word_diff_enabled": false,
+  "tasks": {
+    "prefer_lsp": false,
+    "enabled": false,
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_other_hints": false,
+    "show_parameter_hints": true,
+    "show_type_hints": true,
+    "show_value_hints": false,
+  },
+  "show_completion_documentation": true,
+  "show_completions_on_input": true,
+  "jsx_tag_auto_close": {
+    "enabled": false,
+  },
+  "use_auto_surround": false,
+  "use_autoclose": false,
+  "use_on_type_format": false,
+  "ensure_final_newline_on_save": false,
+  "remove_trailing_whitespace_on_save": false,
+  "indent_guides": {
+    "enabled": false,
+  },
+  "show_wrap_guides": false,
+  "auto_indent_on_paste": false,
+  "vim": {
+    "use_regex_search": false,
+  },
+  "toolbar": {
+    "agent_review": false,
+    "selections_menu": false,
+    "quick_actions": false,
+    "breadcrumbs": false,
+  },
+  "scrollbar": {
+    "axes": {
+      "vertical": false,
+      "horizontal": false,
+    },
+    "selected_symbol": false,
+    "selected_text": false,
+    "search_results": false,
+    "git_diff": false,
+    "cursors": false,
+  },
+  "inline_code_actions": false,
+  "gutter": {
+    "folds": false,
+    "bookmarks": false,
+    "breakpoints": false,
+    "runnables": false,
+    "line_numbers": true,
+  },
+  "drag_and_drop_selection": {
+    "enabled": false,
+  },
+  "hover_popover_sticky": false,
+  "hover_popover_enabled": true,
+  "restore_on_file_reopen": false,
+  "file_finder": {
+    "skip_focus_for_active_in_search": false,
+    "file_icons": false,
+  },
+  "search_wrap": false,
+  "zoomed_padding": false,
+  "preview_tabs": {
+    "enable_preview_file_from_code_navigation": false,
+    "enable_preview_from_multibuffer": false,
+    "enable_preview_from_project_panel": false,
+    "enabled": false,
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show_nav_history_buttons": false,
+    "show": false,
+  },
+  "title_bar": {
+    "show_user_picture": false,
+    "show_user_menu": false,
+    "show_sign_in": false,
+    "show_onboarding_banner": false,
+    "show_project_items": false,
+    "show_branch_name": false,
+  },
+  "search": {
+    "button": false,
+  },
+  "status_bar": {
+    "cursor_position_button": false,
+    "active_language_button": false,
+  },
+  "project_panel": {
+    "dock": "left",
+    "button": false,
+    "file_icons": false,
+    "folder_icons": false,
+    "git_status": false,
+    "auto_reveal_entries": false,
+    "starts_open": false,
+    "auto_fold_dirs": false,
+    "scrollbar": {
+      "horizontal_scroll": false,
+    },
+    "sticky_scroll": false,
+    "drag_and_drop": false,
+    "auto_open": {
+      "on_drop": false,
+      "on_paste": false,
+      "on_create": false,
+    },
+  },
+  "git_panel": {
+    "button": false,
+    "folder_icons": false,
+    "diff_stats": false,
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "debugger": {
+    "button": false,
+    "format_dap_log_messages": false,
+    "log_dap_communications": false,
+    "save_breakpoints": false,
+  },
+  "git": {
+    "show_stage_restore_buttons": false,
+    "branch_picker": {
+      "show_author_name": false,
+    },
+    "blame": {
+      "show_avatar": false,
+    },
+    "inline_blame": {
+      "enabled": false,
+    },
+    "enable_diff": false,
+    "enable_status": false,
+  },
+  "show_edit_predictions": false,
+  "agent": {
+    "limit_content_width": false,
+    "flexible": false,
+    "button": false,
+    "show_merge_conflict_indicator": false,
+    "cancel_generation_on_terminal_stop": false,
+    "expand_terminal_card": false,
+    "expand_edit_card": false,
+    "favorite_models": [],
+    "model_parameters": [],
+    "enable_feedback": false,
+  },
+  "auto_update": false,
+  "session": {
+    "restore_unsaved_buffers": false,
+  },
+  "diagnostics": {
+    "button": false,
+    "lsp_pull_diagnostics": {
+      "enabled": true,
+    },
+  },
+  "linked_edits": false,
+  "completions": {
+    "lsp": true,
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright": {
+          "analysis": {
+            "diagnosticMode": "openFilesOnly",
+          },
+        },
+      },
+    },
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
+        },
+      },
+    },
+  },
+  "enable_language_server": true,
+  "outline_panel": {
+    "dock": "right",
+    "git_status": false,
+    "folder_icons": true,
+    "file_icons": true,
+    "auto_reveal_entries": true,
+    "auto_fold_dirs": true,
+    "indent_guides": {
+      "show": "always",
+    },
+    "default_width": 310.0,
+    "button": true,
+  },
+  "disable_ai": false,
+  "buffer_font_weight": 500.0,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "use_system_prompts": false,
+  "use_system_path_prompts": false,
+  "terminal": {
+    "button": false,
+    "flexible": false,
+    "font_family": ".ZedMono",
+    "font_size": 22.0,
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 17.0,
+  "buffer_font_size": 20.0,
+  "theme": "Gruvbox Dark",
+}
